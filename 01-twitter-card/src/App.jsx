@@ -5,10 +5,10 @@ const App = () => {
 
   return (
     <section className='App'>
-      <TwitterFollowCard formatUserName={formatUserName} userName='alexmarinmendez' name='Alex Marin Mendez' />
-      <TwitterFollowCard formatUserName={formatUserName} isFollowing userName='facebook' name='Meta' />
-      <TwitterFollowCard formatUserName={formatUserName} userName='google' name='Google' />
-      <TwitterFollowCard formatUserName={formatUserName} userName='angular' name='Angular' />
+      <TwitterFollowCard formatUserName={formatUserName} userName='alexmarinmendez'>Alex Marin Mendez</TwitterFollowCard>
+      <TwitterFollowCard formatUserName={formatUserName} isFollowing userName='facebook'>Meta</TwitterFollowCard>
+      <TwitterFollowCard formatUserName={formatUserName} userName='google'>Google</TwitterFollowCard>
+      <TwitterFollowCard formatUserName={formatUserName} userName='angular'>Angular</TwitterFollowCard>
     </section>
   )
 }
