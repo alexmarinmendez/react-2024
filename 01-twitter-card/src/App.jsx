@@ -2,7 +2,7 @@ import TwitterFollowCard from './components/TwitterFollowCard'
 
 const App = () => {
   return (
-    <TwitterFollowCard />
+    <TwitterFollowCard userName='alexmarinmendez' name='Alex Marin Mendez' />
   )
 }
 
