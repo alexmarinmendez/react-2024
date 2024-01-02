@@ -11,7 +11,9 @@ const TwitterFollowCard = ({ userName, name, isFollowing = false }) => {
                 </div>
             </header>
             <aside>
-                <button className='tw-followCard-button'>Seguir</button>
+                <button className='tw-followCard-button'>
+                    {isFollowing ? 'Siguiendo' : 'Seguir'}
+                </button>
             </aside>
         </article>
     )
