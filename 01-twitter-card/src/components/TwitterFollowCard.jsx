@@ -1,8 +1,13 @@
+import { useState } from 'react'
 import '../styles/TwitterFollowCard.css'
 
-const TwitterFollowCard = ({ children, formatUserName, userName, isFollowing = false }) => {
+const TwitterFollowCard = ({ children, formatUserName, userName }) => {
+    const [isFollowing, setIsFollowing] = useState(false)
     const text = isFollowing ? 'Siguiendo' : 'Seguir'
     const buttonClassName = isFollowing ? 'tw-followCard-button is-following' : 'tw-followCard-button'
+    const handleClick = () => {
+        setIsFollowing(!isFollowing)
+    }
     return (
         <article className='tw-followCard'>
             <header className='tw-followCard-header'>
@@ -13,7 +18,7 @@ const TwitterFollowCard = ({ children, formatUserName, userName, isFollowing = f
                 </div>
             </header>
             <aside>
-                <button className={buttonClassName}>{text}</button>
+                <button className={buttonClassName} onClick={handleClick}>{text}</button>
             </aside>
         </article>
     )
