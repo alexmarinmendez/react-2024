@@ -1,15 +1,17 @@
+import './styles/App.css'
+
 const App = () => {
   return (
-    <article>
-      <header>
-        <img src="https://unavatar.io/github/alexmarinmendez" alt="" />
-        <div>
+    <article className='tw-followCard'>
+      <header className='tw-followCard-header'>
+        <img className='tw-followCard-avatar' src="https://unavatar.io/github/alexmarinmendez" alt="" />
+        <div className='tw-followCard-info'>
           <strong>Alex Marin Mendez</strong>
-          <span>@alexmarinmendez</span>
+          <span className='tw-followCard-infoUserName'>@alexmarinmendez</span>
         </div>
       </header>
       <aside>
-        <button>Seguir</button>
+        <button className='tw-followCard-button'>Seguir</button>
       </aside>
     </article>
   )
