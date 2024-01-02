@@ -1,6 +1,8 @@
 import '../styles/TwitterFollowCard.css'
 
 const TwitterFollowCard = ({ children, formatUserName, userName, isFollowing = false }) => {
+    const text = isFollowing ? 'Siguiendo' : 'Seguir'
+    const buttonClassName = isFollowing ? 'tw-followCard-button is-following' : 'tw-followCard-button'
     return (
         <article className='tw-followCard'>
             <header className='tw-followCard-header'>
@@ -11,9 +13,7 @@ const TwitterFollowCard = ({ children, formatUserName, userName, isFollowing = f
                 </div>
             </header>
             <aside>
-                <button className='tw-followCard-button'>
-                    {isFollowing ? 'Siguiendo' : 'Seguir'}
-                </button>
+                <button className={buttonClassName}>{text}</button>
             </aside>
         </article>
     )
