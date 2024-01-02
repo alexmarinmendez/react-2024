@@ -1,11 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
-const Button = ({ text }) => {
-  return (
-    <button>{text}</button>
-  )
-}
+import Button from './components/Button'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.Fragment>
