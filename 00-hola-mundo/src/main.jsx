@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-const createButton = ({ text }) => {
+const Button = ({ text }) => {
   return (
     <button>{text}</button>
   )
@@ -9,7 +9,7 @@ const createButton = ({ text }) => {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.Fragment>
-    {createButton({ text: 'Me gusta' })}
-    {createButton({ text: 'Otro me gusta' })}
+    <Button text='Me gusta'></Button>
+    <Button text='Otro me gusta'></Button>
   </React.Fragment>
 )
