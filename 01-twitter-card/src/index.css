@@ -5,3 +5,9 @@ body {
     display: flex;
     place-content: center;
 }
+
+.App {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
